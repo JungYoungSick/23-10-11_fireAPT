@@ -1,70 +1,90 @@
-for(a = 0; a<10; a++) {
+
+for(a=0; a<10; a++) {
+  let i = a*300*10
   
-
-}
-function exampleCallback(a, b) {
-  return a * b;
-  }
-
-  function one(a, b, callback) {
-    return callback(a, b);
-  }
-  
-  for(i=1; i<10; i++) {
-  let testOne = one(20, i, exampleCallback)
-  }
-
-
-
-const box =[
 setTimeout(function() {
   console.log("ㅡ");
-}, 400),
+}, i),
 setTimeout(function() {
   console.log(" |");
-}, 450),
+}, i),
 setTimeout(function() {
   console.log("ㅡㅡ");
-}, 500),
+}, i),
 setTimeout(function() {
-  console.log("    |");
-}, 550),
-setTimeout(function() {
-  console.log("ㅡㅡㅡㅡ");
-}, 600),
-setTimeout(function() {
-  console.log("       |");
-}, 650),
-setTimeout(function() {
-  console.log("ㅡㅡㅡㅡㅡ");
-}, 700),
-setTimeout(function() {
-  console.log("          |");
-}, 750),
-setTimeout(function() {
-  console.log("ㅡㅡㅡㅡㅡ");
-}, 800),
-setTimeout(function() {
-  console.log("       |");
-}, 850),
+  console.log("   |");
+}, i),
 setTimeout(function() {
   console.log("ㅡㅡㅡㅡ");
-}, 900),
+}, i),
 setTimeout(function() {
-  console.log("    |");
-}, 950),
+  console.log("     |");
+}, i),
 setTimeout(function() {
-  console.log("ㅡㅡ");
-}, 1000),
+  console.log("ㅡㅡㅡㅡㅡ");
+}, i),
 setTimeout(function() {
-  console.log(" |");
-}, 1050),
+  console.log("       |");
+}, i),
 setTimeout(function() {
-  console.log("ㅡ");
-}, 1100)]
-// }
-// console.log(i)
+  console.log("ㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("         |");
+}, i)
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("           |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("             |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("               |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("                |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("                 |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("                  |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("                    |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("                     |");
+}, i),
+setTimeout(function() {
+  console.log("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+}, i),
+setTimeout(function() {
+  console.log("                      |");
+}, i)
 
-for(i=0; i<10; i++) {
-  console.log(box)
-}
+};
