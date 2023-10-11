@@ -58,6 +58,8 @@
       height: 150px;
       background-color: red;
     }
+    .red{background-color: red;}
+    .gray{background-color: gray;}
   </style>
 </head>
 <body>
@@ -92,15 +94,13 @@
     let newArray = [];
     console.dir(health);
     console.log(root);
+    console.dir(paper);
     
-    health.addEventListener("mousedown",() => {
-      for(let i=0; i<papers.length; i++) {
-        newArray = papers[i]
-        
-      }
-      console.log(newArray)
-    })
-
+    // health.addEventListener("click",() => {
+    for(i=0; i<papers.length; i++) {
+      console.log(paper[i])
+    }
+    // });   
 
 
   </script>
