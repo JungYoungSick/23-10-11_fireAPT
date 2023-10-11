@@ -7,19 +7,47 @@
   <style>
     *{margin: 0; padding: 0; box-sizing: border-box;}
     #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: blue;
       display: flex;
+      justify-content: center;
+      align-items: center;
       
+    }
+    #root>div:nth-child(1){
+      width: 50vw;
+      height: 70vh;
+      background-color: antiquewhite;
+    }
+
+    #root>div:nth-child(2){
+      width: 30vw;
+      height: 70vh;
+      background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button{
+      width: 150px;
+      height: 150px;
+      background-color: red;
     }
   </style>
 </head>
 <body>
-  <button id="health">health</button>
   <div id="root">
     <div>
-      <div></div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
       <div></div>
     </div>
-    <div></div>
+    <div>
+      <button id="health">health</button>
+    </div>
   </div>
 </body>
 </html>
