@@ -82,20 +82,28 @@
     let paper = document.getElementById("paper");
     let paper_w = 360;
     let y = 40;
-    let color = paper.style.backgroundColor
+    let C = paper.style
     health.addEventListener("click",() => {
-      
+
       setTimeout(function() {
+        C.backgroundColor = "red"
         y -= 10;
-        paper.style.width = `${paper_w +y}px`;
+        
         setTimeout(function() {
           y -= 10;
           paper.style.width = `${paper_w +y}px`;
-        }, 1000);
-      }, 1000);
-    });   
-    console.dir(paper);
-    console.log(paper)
+          setTimeout(function() {
+            C.backgroundColor = "gray"
+            y -= 10;
+            setTimeout(function() {
+              y -= 10;
+              paper.style.width = `${paper_w +y}px`;
+            },1000);
+          },1000);
+        },1000);
+      },1000);
+    });
+  
 
   </script>
 </body>
