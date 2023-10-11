@@ -65,7 +65,7 @@
     <div>
       <div>
         <div></div>
-        <div>
+        <div class="paper">
           <div></div>
           <div></div>
           <div></div>
@@ -87,10 +87,19 @@
   <script>
     let health = document.getElementById("health");
     let root = document.getElementById("root");
+    let paper = document.getElementsByClassName("paper");
+    let papers = paper[0].children
+    let newArray = [];
     console.dir(health);
     console.log(root);
     
-
+    health.addEventListener("mousedown",() => {
+      for(let i=0; i<papers.length; i++) {
+        newArray = papers[i]
+        
+      }
+      console.log(newArray)
+    })
 
 
 
