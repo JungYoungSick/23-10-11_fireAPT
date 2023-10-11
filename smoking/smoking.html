@@ -67,17 +67,7 @@
     <div>
       <div>
         <div></div>
-        <div class="paper">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div id="paper">
         </div>
       </div>
       <div></div>
@@ -89,19 +79,23 @@
   <script>
     let health = document.getElementById("health");
     let root = document.getElementById("root");
-    let paper = document.getElementsByClassName("paper");
-    let papers = paper[0].children
-    let newArray = [];
-    console.dir(health);
-    console.log(root);
+    let paper = document.getElementById("paper");
+    let paper_w = 360;
+    let y = 40;
+    let color = paper.style.backgroundColor
+    health.addEventListener("click",() => {
+      
+      setTimeout(function() {
+        y -= 10;
+        paper.style.width = `${paper_w +y}px`;
+        setTimeout(function() {
+          y -= 10;
+          paper.style.width = `${paper_w +y}px`;
+        }, 1000);
+      }, 1000);
+    });   
     console.dir(paper);
-    
-    // health.addEventListener("click",() => {
-    for(i=0; i<papers.length; i++) {
-      console.log(paper[i])
-    }
-    // });   
-
+    console.log(paper)
 
   </script>
 </body>
